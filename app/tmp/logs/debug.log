@@ -1,0 +1,94 @@
+2014-04-30 16:18:28 Notice: Notice (8): Undefined variable: i in [/home/interior/painel/app/View/Empreendimentos/add.ctp, line 62]
+Trace:
+include - APP/View/Empreendimentos/add.ctp, line 62
+View::_evaluate() - CORE/Cake/View/View.php, line 923
+View::_render() - CORE/Cake/View/View.php, line 886
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 956
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:38 Notice: Notice (8): Undefined variable: i in [/home/interior/painel/app/View/Empreendimentos/add.ctp, line 62]
+Trace:
+include - APP/View/Empreendimentos/add.ctp, line 62
+View::_evaluate() - CORE/Cake/View/View.php, line 923
+View::_render() - CORE/Cake/View/View.php, line 886
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 956
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:53 Notice: Notice (8): Array to string conversion in [/home/interior/painel/lib/Cake/Model/Datasource/DboSource.php, line 1004]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 1004
+Model::save() - CORE/Cake/Model/Model.php, line 1735
+EmpreendimentosController::add() - APP/Controller/EmpreendimentosController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:53 Notice: Notice (8): Array to string conversion in [/home/interior/painel/lib/Cake/Model/Datasource/DboSource.php, line 1004]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 1004
+Model::save() - CORE/Cake/Model/Model.php, line 1735
+EmpreendimentosController::add() - APP/Controller/EmpreendimentosController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:53 Notice: Notice (8): Array to string conversion in [/home/interior/painel/lib/Cake/Model/Datasource/DboSource.php, line 1004]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 1004
+Model::save() - CORE/Cake/Model/Model.php, line 1735
+EmpreendimentosController::add() - APP/Controller/EmpreendimentosController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:53 Notice: Notice (8): Array to string conversion in [/home/interior/painel/lib/Cake/Model/Datasource/DboSource.php, line 1004]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 1004
+Model::save() - CORE/Cake/Model/Model.php, line 1735
+EmpreendimentosController::add() - APP/Controller/EmpreendimentosController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:53 Notice: Notice (8): Array to string conversion in [/home/interior/painel/lib/Cake/Model/Datasource/DboSource.php, line 1004]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 1004
+Model::save() - CORE/Cake/Model/Model.php, line 1735
+EmpreendimentosController::add() - APP/Controller/EmpreendimentosController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+
+2014-05-02 14:13:53 Notice: Notice (8): Array to string conversion in [/home/interior/painel/lib/Cake/Model/Datasource/DboSource.php, line 1004]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 1004
+Model::save() - CORE/Cake/Model/Model.php, line 1735
+EmpreendimentosController::add() - APP/Controller/EmpreendimentosController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 109
+

@@ -1,0 +1,797 @@
+/* by Plano W (http://www.planow.com.br/) */
+* { margin: 0px; padding: 0px; border: none; outline: none; }
+body { font-family: Arial, sans-serif; font-size: 14px; background: #e2e2e2; }
+img { max-width: 100%; }
+label {
+	font-size: 12px;
+	display: block;
+	font-weight: bold;
+	color: #00A651;
+}
+a { display: inline-block; }
+textarea { resize: none; }
+small { font-size: 12px; color: #00A651; }
+.submit, .btn { text-align: right; padding: 10px 0 }
+[type=submit] {
+	color: #fff;
+	background: transparent url('../img/botao-salvar-todos-imoveis.png') center center no-repeat;
+	width:100px;
+	height: 40px;
+}
+
+[type=submit], [type=checkbox], [type=file] {
+	cursor: pointer
+}
+
+.wrapper {  }
+.container { width: 1060px; margin: 0 auto;  }
+
+.separator { clear: both; border-bottom: 1px solid #f1f1f1; }
+.separator10 { clear: both; border-bottom: 1px solid #f1f1f1; margin-bottom: 10px; }
+.separator20 { clear: both; border-bottom: 1px solid #f1f1f1; margin-bottom: 20px; }
+.hidden { overflow: hidden }
+.clear { clear: both }
+
+#observacaoMessage {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#flashMessage { font-size: 1em; line-height: 1em; margin: 5px 0 15px; padding: 0 5px; font-weight: bold; }
+
+#top {
+	background: #fff;
+	display: inline-block;
+	width: 100%;
+}
+
+#top h2 {
+	text-align: center;
+	margin: 5px 0;
+	font-size: 1.5em;
+}
+
+#sair {
+	text-decoration: none;
+	color: #00A651;
+	font-weight: bold;
+	padding: 10px 0;
+	display: block;
+	text-align: center;
+}
+
+#near { background: #e2e2e2; }
+
+#main { background: #e2e2e2; }
+
+#sideMenu {
+	background: #fff;
+	margin-bottom: 10px;
+	border-radius: 0px 0px 5px 5px;
+	overflow: hidden;
+}
+
+#sideMenu h2 {
+	background: #00A651;
+	color: #fff;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+
+#sideMenu ul {
+	list-style: none;
+	margin-bottom: 40px;
+}
+
+#sideMenu li {
+}
+
+#sideMenu a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('../img/botao-link-menu-lateral.png');
+	padding: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #000 1px 1px 1px;
+}
+
+#sideMenu a:hover {
+	background-image: url('../img/botao-link-menu-lateral-hover.png');
+}
+
+#sideMenu a:active {
+	background-image: url('../img/botao-link-menu-lateral-active.png');
+}
+
+
+h2.titulo {
+	background:#00A651;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 5px 15px;
+	margin-bottom: 15px;
+}
+
+#AdministradorsIndex .iconeGrande {
+	background: url('../img/usuarios-usuario.png') no-repeat center center;
+	width: 240px;
+	height: 240px;
+	display: inline-block;
+	float: left;
+}
+
+#AdministradorsIndex .formCriar {
+	display: inline-block;
+	float: left;
+	width: 450px;
+}
+
+#AdministradorsIndex .formCriar label {
+	display: block;
+	color: #00A651;
+	padding: 10px 0;
+}
+
+#AdministradorsIndex .formCriar input {
+	padding: 10px 5px;
+	width: 450px;
+}
+
+#AdministradorsIndex .formCriar input[type=submit] {
+	width: 82px;
+	height: 50px;
+	margin-top: 10px;
+	background: transparent url('../img/botao-enviar.png') no-repeat center center;
+	color: #fff;
+}
+
+#AdministradorsIndex .line.head {
+	color: #273e48;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#AdministradorsIndex .line.head .nome { display: inline-block; float: left; width: 280px }
+#AdministradorsIndex .line.head .usuario { display: inline-block; float: left; width: 280px }
+#AdministradorsIndex .line.head .editar { display: inline-block; float: left; width: 60px }
+#AdministradorsIndex .line.head .excluir { display: inline-block; float: left; width: 60px }
+
+
+#AdministradorsIndex .line {
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#AdministradorsIndex .line.content .nome {
+	display: inline-block;
+	float: left;
+	background: #fff;
+	width: 280px;
+	margin-right: 5px;
+}
+
+#AdministradorsIndex .line.content .usuario {
+	display: inline-block;
+	float: left;
+	background: #fff;
+	width: 280px;
+	margin-right: 5px;
+}
+
+#AdministradorsIndex .line.content .editar {
+	display: inline-block;
+	float: left;
+	width: 60px;
+}
+
+#AdministradorsIndex .line.content .excluir {
+	display: inline-block;
+	float: left;
+	width: 60px;
+}
+
+#AdministradorsIndex .line.content span {
+	max-width: 100%;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0;
+}
+
+.paginacao {
+	margin: 20px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.paginacao span {
+	margin: 10px;
+}
+
+.paginacao a {
+	text-decoration: none;
+	color: #00A651;
+}
+
+.paginacao .prev {
+}
+
+.paginacao .next {
+}
+
+.paginacao .disabled {
+	color: #999;
+}
+
+#ImobiliariasIndex {}
+
+#ImobiliariasIndex .iconeCadastrar {
+	text-align: center;
+	width: 140px;
+	display: inline-block;
+	float: left;
+}
+
+#ImobiliariasIndex .iconeCadastrar span {
+	color: #00A651;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#ImobiliariasIndex .iconeCadastrar img {
+}
+
+#ImobiliariasIndex .iconeCadastrar a {
+	display: block;
+	background: #fff;
+	padding: 40px;
+}
+
+#ImobiliariasIndex .iconeExportar {
+	text-align: center;
+	width: 140px;
+	display: inline-block;
+	float: left;
+	margin-left: 25px;
+}
+
+#ImobiliariasIndex .iconeExportar span {
+	color: #00A651;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#ImobiliariasIndex .iconeExportar img {
+}
+
+#ImobiliariasIndex .iconeExportar a {
+	display: block;
+	background: #fff;
+	padding: 34px;
+}
+
+#ImobiliariaIndexForm {
+	display: inline-block;
+	float: left;
+	width: 385px;
+	margin-left: 10px;
+}
+
+#ImobiliariaIndexForm label {
+	display: block;
+	color: #00A651;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#ImobiliariaIndexForm input {
+	padding: 5px 10px;
+	width: 365px;
+}
+
+#ImobiliariaIndexForm input[type=submit] {
+	width: 95px;
+	height: 40px;
+	color: #fff;
+	margin-top: 20px;
+	background: transparent url('../img/botao-pesquisar.png') no-repeat center center;
+	margin-bottom: 50px;
+}
+
+#ImobiliariaIndexForm select {
+	padding: 5px 10px;
+	width: 385px;
+}
+
+
+.line.head {
+	color: #273e48;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.line.head .campo {
+	display: inline-block;
+	float: left;
+	width: 140px;
+}
+
+.line.head span {
+	padding: 5px;
+}
+
+
+.line.content {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.line.content .campo {
+	display: inline-block;
+	float: left;
+	width: 135px;
+	margin-right: 5px;
+	background: #fff;
+}
+
+.line.content span {
+	padding: 5px;
+	display: inline-block;
+}
+
+.iconsEdit {
+}
+
+.iconsEdit .icon {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	padding: 6px;
+	background-image: url('../img/icons-edit.png');
+	background-repeat: no-repeat;
+	margin: 0 9px;
+}
+
+.iconsEdit .edit {
+	background-position: -3px -3px;
+}
+
+.iconsEdit .view {
+	background-position: -32px -3px;
+}
+
+.iconsEdit .delete {
+	background-position: -56px -3px;
+}
+
+#ImobiliariaAddForm {}
+
+#ImobiliariaAddForm input {
+	padding: 10px 5px;
+	width: 330px;
+	margin-right: 10px;
+}
+
+#ImobiliariaAddForm select {
+	padding: 10px 5px;
+	width: 330px;
+	margin-right: 10px;
+}
+
+#ImobiliariaAddForm input[type=submit] {
+	width: 160px;
+	height: 50px;
+	margin-top: 10px;
+	background: transparent url('../img/botao-salvar-imobiliaria.png') no-repeat center center;
+	color: #fff;
+	margin-bottom: 100px;
+}
+#ImobiliariaAddForm textarea {
+	padding: 10px 5px;
+	width: 330px;
+}
+
+#ImobiliariaAddForm label {
+	display: block;
+	color: #00A651;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+
+#ImobiliariaAddForm .upload {
+	display: inline-block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin: 5px 50px;
+	background: #fff url('../img/icone-upload.png') no-repeat center center;
+	cursor: pointer;
+}
+
+#ImobiliariaAddForm .upload input[type=file] {
+	padding: 100%
+}
+
+#ImobiliariaAddForm .delete {
+	display: inline-block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 5px 50px;
+	background: #fff url('../img/icone-delete.png') no-repeat center center;
+}
+
+#ImobiliariaAddForm .delete a {
+	display: block;
+	height: 100%
+}
+
+#ImobiliariaAddForm .delete {
+}
+
+.loading {
+	background: #fff url('../img/loading.gif') no-repeat center center;
+}
+
+#SlideshowIndex #ImobiliariaAddForm input {
+	width: 320px;
+}
+
+#SlideshowIndex #ImobiliariaAddForm input[type=submit] {
+	width: 160px;
+}
+
+#ImovelIndexForm label {
+	display: block;
+	color: #00A651;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#ImovelIndexForm select {
+	width: 98%;
+	padding: 2%;
+	margin-bottom: 20px;
+}
+
+#ImovelIndexForm input[type="submit"] {
+	background: transparent url('../img/botao-salvar-todos-imoveis.png') center center;
+	width: 100px;
+	color: #fff;
+	padding: 0;
+	height: 40px;
+}
+.icone-gerenciamento {
+	display: inline-block;
+	width: 100%;
+	height: 130px;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.icone-gerenciamento.imovel {
+	background-image: url('../img/imovel.png');
+}
+
+.icone-gerenciamento.empreendimento {
+	background-image: url('../img/empreendimento.png');
+}
+
+.verde-pequeno {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #00A651;
+}
+.select select {
+	width: 100%;
+	padding: 5px 0;
+	margin-bottom: 10px;
+}
+
+#displayForm [type=submit] {
+	background-image: url('../img/botao-filtrar-index.png');
+	width: 100px;
+	height: 35px;
+}
+
+#displayForm #codigo {
+	width: 100%;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+
+.text input, .number input {
+	width: 100%;
+	padding: 5px 0;
+	margin-bottom: 10px;
+}
+
+#ImovelDescricao {
+	width: 100%;
+	height: 75px;
+	margin-bottom: 10px;
+}
+
+#ImovelValor {
+	box-shadow: inset 0px 0px 2px #c00;
+	outline: 2px solid #c00;
+}
+
+#mais-opcoes {
+	background: #fff url('../img/mais-opcoes-cadastro-imovel.png') no-repeat center 15px;
+	margin-top: 15px;
+	padding: 50px 40px 20px;
+}
+
+#mais-opcoes label {
+	display: inline-block;
+	padding: 2px 5px;
+}
+
+#mais-opcoes [type=checkbox] {
+	width: 13px;
+	height: 13px;
+}
+
+#mais-opcoes [type=checkbox]:checked {
+	background: url('../img/certinho.png') no-repeat center center;
+}
+
+#ImovelAddForm [type=submit] {
+	background-image: url('../img/botao-filtrar-index.png');
+	width: 100px;
+	height: 35px;
+	margin: 5px;
+}
+
+.btnEnviarFoto {
+	background: #fff url('../img/icone-upload-foto.png') no-repeat center center;
+	height: 130px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.btnEnviarFoto.loading {
+	background:  #fff url('../img/loading.gif') no-repeat center center; ;
+}
+
+.btnEnviarFoto img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.btnEnviarFoto [type=file] {
+	padding: 1000%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: 1000px;
+	height: 100%;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	z-index: 10;
+}
+
+.btnEnviarFoto .remove {
+	z-index: 150;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+
+[name=arq] {
+	padding: 100%;
+	z-index: 100;
+}
+
+.btnEnviarFoto button {
+	padding: 1000%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: 1000px;
+	height: 100%;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	z-index: 10;
+}
+
+#btnBannerTopo {
+	padding: 1000%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: 1000px;
+	height: 100%;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	z-index: 10;
+}
+
+.btnEnviarFoto .remover {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	background: url('../img/icone-delete.png') center center;
+	width: 16px;
+	height: 16px;
+	opacity: .8;
+}
+
+.btnEnviarFoto .remover:hover {
+	opacity: 1;
+}
+
+#ImovelAddForm {
+	padding-bottom: 100px;
+}
+
+#alterarLocalizacao {
+	float: right;
+	color: #00A651;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn [type=submit], button {
+	asd-background: transparent url('../img/botao.png') no-repeat center center;
+	height: 30px;
+	width: 100px;
+	background: #00A651;
+	color: #fff;
+}
+
+.row-fluid.cabecalho {
+	font-weight: bold;
+	font-size: 12px;
+	color: #00A651;
+}
+
+.row-fluid.opcoes a {
+	width: 100%;
+	height: 32px;
+	background-color: #fff;
+	background-image: url('../img/botao-opcoes.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: inline-block;
+}
+
+.row-fluid.opcoes a.editar { background-position: 6px center }
+.row-fluid.opcoes a.ativo { background-position: -45px center }
+.row-fluid.opcoes a.excluir { background-position: -91px center; }
+
+.row-fluid.imovel { padding: 10px 0 }
+
+.row-fluid.opcoes a.ativo.ativado {
+	background-image: url('../img/certo.png');
+	background-position: center center;
+}
+
+.row-fluid.opcoes a.ativo.desativadoPeloAdm {
+	background: url('../img/cancel.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.icone-tipo {
+	width: 100%;
+	height: 24px;
+	display: inline-block;
+	background-color: transparent;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.icone-tipo.Residencial {
+	background-image: url('../img/icone-residencial.png');
+}
+
+.icone-tipo.Comercial {
+	background-image: url('../img/icone-comercial.png');
+}
+
+.icone-tipo.Empreendimento {
+	background-image: url('../img/icone-empreendimento.png');
+}
+
+.icone-tipo.Terreno {
+	background-image: url('../img/icone-terreno.png');
+}
+
+.icone-tipo.Rural {
+	background-image: url('../img/icone-rural.png');
+}
+
+.imovel-foto {
+	width: 85px;
+}
+
+.imovel-codigo {
+	width: 40px;
+}
+
+.imovel-placa {
+	width: 40px;
+}
+
+.imovel-imovel {
+	width: 156px;
+}
+
+.imovel-bairro {
+	width: 130px;
+}
+
+.imovel-cidade {
+	width: 100px;
+}
+
+.imovel-tipo {
+	width: 24px;
+}
+
+[class*="empreendimento-"] { margin-right: 10px }
+.empreendimento-foto { width: 150px; }
+.empreendimento-cidade { width: 150px; }
+.empreendimento-bairro { width: 150px }
+.empreendimento-endereco { width: 310px }
+.empreendimento-opcoes { width: 150px }
+
+h2.label {
+	color: #00A651;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-bottom: .5em;
+}
+
+#videoYoutube, #iframeMaps {
+	height: 400px;
+}
+
+#imoveis-mais-vistos {
+	background-color: #fff;
+	padding: 10px;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+
+#imoveis-mais-vistos .row-fluid {
+	padding: 0 10px;
+	margin: 0 -10px;
+}
+
+#imoveis-mais-vistos .row-fluid:nth-child(odd) {
+	background-color: #eee;
+}
+
+
